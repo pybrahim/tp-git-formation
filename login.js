@@ -1,12 +1,12 @@
 // Formulaire de connexion
 function login() {
-  const val1 = document.getElementById("identifiant").value;
-  const val2 = document.getElementById("mot-de-passe").value;
+  const identifiant = document.getElementById("identifiant").value;
+  const motDePasse = document.getElementById("mot-de-passe").value;
 
-  if (val1 === "" || val2 === "") {
+  if (identifiant === "" || motDePasse === "") {
     alert("Veuillez renseigner l'identifiant et le mot de passe.");
     return false;
   }
-  console.log("Connexion de l'utilisateur : " + val1);
+  console.log("Connexion de l'utilisateur : " + identifiant);
   return true;
 }
